@@ -4,9 +4,9 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   // ==========================================================================
-  // 1. CUSTOM BLOCK CURSOWITH LERP PHYSICS
+  // 1. CUSTOM BLOCK CURSOR WITH LERP PHYSICS
   // ==========================================================================
   const cursor = document.getElementById('custom-cursor');
   let mouseX = 0;
@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cursor.style.opacity === '0' || !cursor.style.opacity) {
       cursor.style.opacity = '1';
     }
-    
+
     mouseX = e.clientX;
     mouseY = e.clientY;
-    
+
     // Stop blinking when moving
     isMoving = true;
     cursor.classList.remove('cursor-blink');
-    
+
     // Reset idle timer for blinking
     clearTimeout(idleTimer);
     idleTimer = setTimeout(() => {
@@ -57,10 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const ease = 0.16;
     cursorX += (mouseX - cursorX) * ease;
     cursorY += (mouseY - cursorY) * ease;
-    
+
     cursor.style.left = `${cursorX}px`;
     cursor.style.top = `${cursorY}px`;
-    
+
     requestAnimationFrame(updateCursor);
   }
   requestAnimationFrame(updateCursor);
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
       cursor.style.backgroundColor = '#FFFFFF';
       cursor.style.mixBlendMode = 'difference';
     });
-    
+
     element.addEventListener('mouseleave', () => {
       isHovering = false;
       cursor.style.width = '10px';
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function type() {
     const currentRole = roles[roleIndex];
-    
+
     if (isDeleting) {
       // Deleting text
       typewriterElement.textContent = currentRole.substring(0, charIndex - 1);
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(type, typingSpeed);
   }
-  
+
   // Kickstart typewriter
   if (typewriterElement) {
     setTimeout(type, 1000);
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const observer = new IntersectionObserver(revealCallback, revealOptions);
-  
+
   const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
   scrollRevealElements.forEach(el => {
     observer.observe(el);
@@ -205,12 +205,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (emailButton) {
     emailButton.addEventListener('click', () => {
       const emailText = "sabaradchinmay2006@gmail.com";
-      
+
       navigator.clipboard.writeText(emailText).then(() => {
         // Success feedback
         copyHint.textContent = "→ [copied!]";
         copyHint.style.color = "var(--accent-color)";
-        
+
         // Reset feedback state
         setTimeout(() => {
           copyHint.textContent = "→ click to copy";
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
       const isOpened = navLinksList.classList.toggle('mobile-open');
       menuToggle.setAttribute('aria-expanded', isOpened);
-      
+
       if (toggleIcon) {
         toggleIcon.textContent = isOpened ? '[CLOSE]' : '[MENU]';
       }
