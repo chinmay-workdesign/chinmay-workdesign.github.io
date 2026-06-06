@@ -1,0 +1,19 @@
+{
+  "name": "chinmay-sabarad-portfolio",
+  "version": "1.0.0",
+  "description": "Chinmay B Sabarad's Personal Portfolio Website - Terminal Noir meets Editorial Print",
+  "main": "app.js",
+  "scripts": {
+    "dev": "live-server --port=3000 --entry-file=index.html"
+  },
+  "keywords": [
+    "portfolio",
+    "terminal-noir",
+    "editorial-print"
+  ],
+  "author": "Chinmay B Sabarad",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
