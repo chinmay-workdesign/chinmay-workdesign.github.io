@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   
   // ==========================================================================
-  // 1. CUSTOM BLOCK CURSOR WITH LERP PHYSICS
+  // 1. CUSTOM BLOCK CURSOWITH LERP PHYSICS
   // ==========================================================================
   const cursor = document.getElementById('custom-cursor');
   let mouseX = 0;
