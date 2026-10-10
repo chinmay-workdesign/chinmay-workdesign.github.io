@@ -411,7 +411,9 @@ document.addEventListener('DOMContentLoaded', () => {
       issuer: "National Institute of Technology (NITK), Web Enthusiasts' Club NITK, IET NITK & INCUBATE",
       date: "September 26–27, 2026",
       filename: "nitk_build_for_billions_award.png",
-      image: "nitk_certificate.png",
+      image: "nitk_certificate.webp",
+      width: 2500,
+      height: 1768,
       projectTitle: "Rural Micro-Enterprise AI Advisory & Financial Structuring Platform",
       projectUrl: "https://github.com/chinmay-workdesign/Rural-Entrepreneur-Financial-Advisory-BfB",
       downloadUrl: "nitk_certificate.png",
@@ -423,7 +425,9 @@ document.addEventListener('DOMContentLoaded', () => {
       issuer: "WeMakeDevs with AWS (Amazon Web Services) — Presented by Kunal Kushwaha",
       date: "September 20, 2026",
       filename: "first_commit_aws_certificate.png",
-      image: "first_commit_certificate.png",
+      image: "first_commit_certificate.webp",
+      width: 2000,
+      height: 1125,
       projectTitle: "Vitalis — Enterprise Serverless Healthcare Workflow Automation Platform",
       projectUrl: "https://github.com/amoghsamji/Vitalis",
       downloadUrl: "first_commit_certificate.pdf",
@@ -444,6 +448,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (certModalImg) {
       certModalImg.src = data.image;
       certModalImg.alt = `${data.title} - Chinmay B Sabarad`;
+      certModalImg.width = data.width;
+      certModalImg.height = data.height;
+      certModalImg.loading = "lazy";
+      certModalImg.decoding = "async";
     }
 
     if (certModalProject) {
