@@ -252,4 +252,139 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==========================================================================
+  // 7. INTERACTIVE CERTIFICATE MODAL LIGHTBOX
+  // ==========================================================================
+  const certModal = document.getElementById('certificate-modal');
+  const certModalClose = document.getElementById('cert-modal-close');
+  const certModalImg = document.getElementById('cert-modal-img');
+  const certModalTitle = document.getElementById('cert-modal-title');
+  const certModalEvent = document.getElementById('cert-modal-event');
+  const certModalIssuer = document.getElementById('cert-modal-issuer');
+  const certModalDate = document.getElementById('cert-modal-date');
+  const certModalProject = document.getElementById('cert-modal-project');
+  const certModalDownload = document.getElementById('cert-modal-download');
+  const certModalFilename = document.getElementById('cert-modal-filename');
+
+  const certificatesData = {
+    nitk: {
+      title: "Certificate of Appreciation — 2nd Place",
+      event: "Build for Billions 24-Hour Hackathon",
+      issuer: "NIT Karnataka, Web Enthusiasts' Club NITK, IET NITK & INCUBATE",
+      date: "September 26–27, 2026",
+      filename: "nitk_build_for_billions_award.png",
+      image: "nitk_certificate.png",
+      projectTitle: "Rural Micro-Enterprise AI Advisory & Financial Structuring Platform",
+      projectUrl: "https://github.com/chinmay-workdesign/Rural-Entrepreneur-Financial-Advisory-BfB",
+      downloadUrl: "nitk_certificate.png",
+      downloadLabel: "Open Full Resolution Image ↗"
+    },
+    firstcommit: {
+      title: "Certificate of Participation & Project Shipped",
+      event: "Bharat Builds Tour · First Commit (Event 01)",
+      issuer: "WeMakeDevs with AWS (Amazon Web Services) — Presented by Kunal Kushwaha",
+      date: "September 20, 2026",
+      filename: "first_commit_aws_certificate.png",
+      image: "first_commit_certificate.png",
+      projectTitle: "Vitalis — Enterprise Serverless Healthcare Workflow Automation Platform",
+      projectUrl: "https://github.com/amoghsamji/Vitalis",
+      downloadUrl: "first_commit_certificate.pdf",
+      downloadLabel: "Download Original PDF Certificate ↗"
+    }
+  };
+
+  function attachCursorHover(elements) {
+    elements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        isHovering = true;
+        cursor.classList.remove('cursor-blink');
+        cursor.style.width = '24px';
+        cursor.style.height = '24px';
+        cursor.style.backgroundColor = '#FFFFFF';
+        cursor.style.mixBlendMode = 'difference';
+      });
+
+      element.addEventListener('mouseleave', () => {
+        isHovering = false;
+        cursor.style.width = '10px';
+        cursor.style.height = '18px';
+        cursor.style.backgroundColor = 'var(--accent-color)';
+        cursor.style.mixBlendMode = 'normal';
+        if (!isMoving) {
+          cursor.classList.add('cursor-blink');
+        }
+      });
+    });
+  }
+
+  function openCertModal(certId) {
+    const data = certificatesData[certId];
+    if (!data || !certModal) return;
+
+    if (certModalTitle) certModalTitle.textContent = data.title;
+    if (certModalEvent) certModalEvent.textContent = data.event;
+    if (certModalIssuer) certModalIssuer.textContent = data.issuer;
+    if (certModalDate) certModalDate.textContent = data.date;
+    if (certModalFilename) certModalFilename.textContent = data.filename;
+
+    if (certModalImg) {
+      certModalImg.src = data.image;
+      certModalImg.alt = `${data.title} - Chinmay B Sabarad`;
+    }
+
+    if (certModalProject) {
+      certModalProject.href = data.projectUrl;
+      certModalProject.textContent = `→ View Project on GitHub`;
+    }
+
+    if (certModalDownload) {
+      certModalDownload.href = data.downloadUrl;
+      certModalDownload.textContent = data.downloadLabel;
+      certModalDownload.setAttribute('target', '_blank');
+      certModalDownload.setAttribute('rel', 'noopener noreferrer');
+    }
+
+    certModal.classList.add('active');
+    certModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeCertModal() {
+    if (!certModal) return;
+    certModal.classList.remove('active');
+    certModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  // Trigger modal open on clicks
+  const certTriggers = document.querySelectorAll('[data-open-cert]');
+  certTriggers.forEach(trigger => {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      const certId = trigger.getAttribute('data-open-cert');
+      openCertModal(certId);
+    });
+  });
+
+  if (certModalClose) {
+    certModalClose.addEventListener('click', closeCertModal);
+  }
+
+  if (certModal) {
+    certModal.addEventListener('click', (e) => {
+      if (e.target === certModal) {
+        closeCertModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certModal.classList.contains('active')) {
+        closeCertModal();
+      }
+    });
+
+    // Ensure buttons inside modal work with custom cursor
+    attachCursorHover(certModal.querySelectorAll('a, button'));
+  }
+
 });
