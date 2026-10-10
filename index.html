@@ -23,7 +23,7 @@
     href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=1.0.5">
+  <link rel="stylesheet" href="styles.css?v=1.0.8">
 </head>
 
 <body>
@@ -46,10 +46,8 @@
       </button>
       <ul class="nav-links" id="nav-links-list">
         <li><a href="#about" class="nav-link" id="link-about">→ ./about</a></li>
-        <li><a href="#skills" class="nav-link" id="link-skills">→ ./skills</a></li>
         <li><a href="#projects" class="nav-link" id="link-projects">→ ./projects</a></li>
-        <li><a href="#certificates" class="nav-link" id="link-certificates">→ ./credentials</a></li>
-        <li><a href="#education" class="nav-link" id="link-education">→ ./education</a></li>
+        <li><a href="#skills" class="nav-link" id="link-skills">→ ./skills</a></li>
         <li><a href="#contact" class="nav-link" id="link-contact">→ ./contact</a></li>
       </ul>
     </nav>
@@ -82,17 +80,17 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary mono" id="hero-btn-projects">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
               → ./projects
             </a>
-            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary mono"
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"
               id="hero-btn-resume">
               → ./resume.pdf
             </a>
           </div>
 
-          <div class="hero-location-footer mono">
-            <span class="accent-color">→</span> Open for remote internships
+          <div class="hero-location-footer">
+            <span class="accent-color">→</span> Open for internships
           </div>
         </div>
 
@@ -112,12 +110,12 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- 01 // About -->
     <section id="about" class="about-section scroll-reveal" data-reveal="slide">
       <div class="section-container">
         <div class="section-header">
           <span class="section-number mono">01 //</span>
-          <h2 class="section-title">About Me</h2>
+          <h2 class="section-title">About</h2>
         </div>
 
         <div class="about-grid">
@@ -159,36 +157,407 @@
               <div class="panel-body mono">
                 <div class="readout-line"><span class="readout-label">ROLE</span><span
                     class="readout-arrow">→</span><span class="readout-val">SWE Intern (Full-Stack & AI)</span></div>
-                <div class="readout-line"><span class="readout-label">UNIVERSITY</span><span
-                    class="readout-arrow">→</span><span class="readout-val">KLE Tech University</span></div>
-                <div class="readout-line"><span class="readout-label">DEGREE</span><span
-                    class="readout-arrow">→</span><span class="readout-val">B.E. Comp. Sci.</span></div>
+                <div class="readout-line"><span class="readout-label">STATUS</span><span
+                    class="readout-arrow">→</span><span class="readout-val accent-color">Open for internships</span>
+                </div>
                 <div class="readout-line"><span class="readout-label">CGPA</span><span
                     class="readout-arrow">→</span><span class="readout-val accent-color">9.1 / 10.0</span></div>
-                <div class="readout-line"><span class="readout-label">GRADUATION</span><span
-                    class="readout-arrow">→</span><span class="readout-val">Aug 2028 (Pre-final yr)</span></div>
                 <div class="readout-line"><span class="readout-label">HONORS</span><span
                     class="readout-arrow">→</span><span class="readout-val accent-color">1st Runner-Up · NITK</span>
                 </div>
                 <div class="readout-line"><span class="readout-label">LANGUAGES</span><span
                     class="readout-arrow">→</span><span class="readout-val">English · Hindi · Kannada</span></div>
-                <div class="readout-line"><span class="readout-label">STATUS</span><span
-                    class="readout-arrow">→</span><span class="readout-val accent-color">Open for remote
-                    internships</span>
-                </div>
               </div>
+            </div>
+
+            <!-- Folded Education (Compact List) -->
+            <div class="compact-edu-card">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">education_history.log</span>
+              </div>
+              <ul class="compact-edu-list">
+                <li class="compact-edu-item">
+                  <span class="compact-edu-school">KLE Technological University</span> — B.E. Computer Science &amp;
+                  Engineering (2024–2028) · CGPA: <span class="accent-color">9.1 / 10.0</span>
+                </li>
+                <li class="compact-edu-item">
+                  <span class="compact-edu-school">Central Public School</span> — Senior Secondary (CBSE, 2024) · <span
+                    class="accent-color">87%</span>
+                </li>
+                <li class="compact-edu-item">
+                  <span class="compact-edu-school">Jawahar Navodaya Vidyalaya</span> — Secondary (CBSE, 2022) · <span
+                    class="accent-color">94%</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section scroll-reveal" data-reveal="slide">
+    <!-- 02 // Projects -->
+    <section id="projects" class="projects-section scroll-reveal" data-reveal="slide">
       <div class="section-container">
         <div class="section-header">
           <span class="section-number mono">02 //</span>
-          <h2 class="section-title">Technical Skills</h2>
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Rural Financial Advisory -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">rural_financial_advisor.py</span>
+                <span class="panel-time mono">Sep 2026 · NITK</span>
+              </div>
+              <div class="panel-body">
+                <!-- Rural Advisor Demo Media Block (rendered if DEMO_VIDEO configured) -->
+                <div id="rural-media-block" class="project-media-frame" style="display: none;">
+                  <div class="project-media-bar">
+                    <span class="panel-dot red"></span>
+                    <span class="panel-dot yellow"></span>
+                    <span class="panel-dot green"></span>
+                    <span class="project-media-title">rural_advisor_demo.mp4</span>
+                  </div>
+                  <div class="project-media-viewport">
+                    <div id="rural-facade" class="facade-container" role="button" tabindex="0"
+                      aria-label="Play Rural Advisor Demo">
+                      <img src="assets/screens/rural-poster.webp"
+                        alt="Rural Advisor WhatsApp Demonstration Video Poster" width="1280" height="720" loading="lazy"
+                        decoding="async" class="facade-poster" onerror="this.closest('.project-media-frame').remove();">
+                      <div class="facade-play-btn" aria-hidden="true">▶</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="project-tags mono">
+                  Python · FastAPI · Qdrant Vector DB · FastEmbed · Gemini 2.5 Flash Lite · Groq Whisper · Telegram Bot
+                  API · WhatsApp Cloud API · Streamlit · Docker
+                </div>
+                <h3 class="project-headline">
+                  NABARD-Grounded Vernacular AI Advisory & DPR Structuring Platform
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: 2nd Place Winner at NITK Build for Billions. Generated bankable 2-page DPR PDFs with
+                  DSCR metrics in 5 Indian languages.
+                </p>
+                <div class="badge-container">
+                  <span class="award-badge">🏆 2ND PLACE WINNER @ NITK</span>
+                  <span class="accuracy-badge">184 TESTS PASSED (100%)</span>
+                  <span class="rank-badge">5 INDIAN LANGUAGES</span>
+                  <span class="rank-badge">ZERO-COST STACK</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Formulated a 100% zero-cost conversational AI advisory engine serving rural micro-entrepreneurs
+                    natively over <strong class="highlight-bold">Telegram & WhatsApp</strong> in 5 languages (Kannada,
+                    Hindi, Telugu, Marathi, English) with voice note STT/TTS.</li>
+                  <li>Engineered a <strong class="highlight-bold">deterministic financial calculation engine</strong>
+                    strictly grounded in official NABARD SLUCC unit costs and statutory schemes (<strong
+                      class="highlight-bold">PMEGP, MUDRA up to ₹20L, NSFDC, NBCFDC, NSTFDC</strong>) with strict
+                    anti-hallucination guardrails.</li>
+                  <li>Built a dual-engine automated PDF compiler producing vector-rendered <strong
+                      class="highlight-bold">2-page bankable Detailed Project Reports (DPR)</strong> with
+                    reducing-balance amortizations and 5-year cash-flow / DSCR projections dispatched instantly in chat.
+                  </li>
+                  <li>Developed an authenticated <strong class="highlight-bold">State Channelizing Agency (SCA) field
+                      officer console</strong> in Streamlit featuring GPS geo-verification, margin money validation, and
+                    automated loan sanctioning workflows.</li>
+                  <li>Maintained mission-critical reliability with an automated suite of <strong
+                      class="accent-color">184 unit and integration tests (100% pass rate)</strong>.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Built for:</span> Build for Billions Hackathon · National Institute of
+                  Technology (NITK)
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/chinmay-workdesign/Rural-Entrepreneur-Financial-Advisory-BfB"
+                    target="_blank" rel="noopener noreferrer" class="project-action-btn">
+                    → GitHub
+                  </a>
+                  <button type="button" class="project-action-btn btn-accent" data-open-cert="nitk">
+                    View certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: First Commit Hackathon - Vitalis -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">vitalis_event_bus.ts</span>
+                <span class="panel-time mono">Sep 2026 · First Commit</span>
+              </div>
+              <div class="panel-body">
+                <div class="project-tags mono">
+                  AWS Lambda (22+ Microservices) · TypeScript · Next.js 14 · DynamoDB (Single-Table) · EventBridge ·
+                  Amazon Textract · Amazon Polly · Amazon Translate · Amazon Lex V2 · AWS CDK v2
+                </div>
+                <h3 class="project-headline">
+                  Serverless Telehealth & Clinical Automation Engine with Autonomous AI Voice Agents
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: Built at First Commit (WeMakeDevs & AWS). 100% pay-per-use, zero-idle-cost healthcare
+                  orchestration.
+                </p>
+                <div class="badge-container">
+                  <span class="award-badge">⚡ FIRST COMMIT HACKATHON</span>
+                  <span class="accuracy-badge">22+ AWS MICROSERVICES</span>
+                  <span class="rank-badge">SINGLE-TABLE DYNAMODB</span>
+                  <span class="rank-badge">ZERO IDLE COST</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Architected an enterprise-grade, serverless healthcare orchestration backend featuring <strong
+                      class="highlight-bold">22+ Node.js 20.x TypeScript microservices</strong> on AWS Lambda and an
+                    <strong class="highlight-bold">Amazon DynamoDB single-table design</strong>.
+                  </li>
+                  <li>Automated clinical document intake using <strong class="highlight-bold">Amazon Textract</strong>
+                    for multi-page OCR and extraction of complex medical laboratory panels into structured clinical
+                    biomarkers.</li>
+                  <li>Engineered <strong class="highlight-bold">Autonomous Conversational Voice Check-Ins</strong> using
+                    Amazon Lex V2 and Amazon Connect / Chime SDK to proactively call patients post-consultation, detect
+                    emergency symptoms, and atomically rebook clinic slots.</li>
+                  <li>Built <strong class="highlight-bold">Multilingual Prescription Accessibility</strong> by
+                    translating doctor instructions into regional languages (Amazon Translate) and streaming neural
+                    audio playback (Amazon Polly).</li>
+                  <li>Designed an interactive <strong class="highlight-bold">visual no-code clinical workflow
+                      canvas</strong> allowing doctors to construct dynamic event-driven care pathways triggered by
+                    Amazon EventBridge.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Built for:</span> First Commit (Bharat Builds Tour) · WeMakeDevs & Amazon
+                  Web Services (AWS)
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/amoghsamji/Vitalis" target="_blank" rel="noopener noreferrer"
+                    class="project-action-btn">
+                    → GitHub
+                  </a>
+                  <button type="button" class="project-action-btn btn-accent" data-open-cert="firstcommit">
+                    View certificate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Intrvyu AI -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">graphEngine.ts</span>
+                <span class="panel-time mono">Jun - Jul 2026</span>
+              </div>
+              <div class="panel-body">
+                <!-- Browser-window Media Block -->
+                <div class="project-media-frame">
+                  <div class="project-media-bar">
+                    <span class="panel-dot red"></span>
+                    <span class="panel-dot yellow"></span>
+                    <span class="panel-dot green"></span>
+                    <span class="project-media-title">https://intrvyu-ai.vercel.app/</span>
+                  </div>
+                  <div class="project-media-viewport">
+                    <img src="assets/screens/intrvyu.webp" alt="Intrvyu AI Voice Mock Interview Platform" width="1280"
+                      height="720" loading="lazy" decoding="async" class="project-media-img"
+                      onerror="this.closest('.project-media-frame').remove();">
+                  </div>
+                </div>
+
+                <div class="project-tags mono">
+                  Next.js 15 · Express · PostgreSQL · Prisma · LangGraph · Gemini Live API · WebSockets · TypeScript
+                </div>
+                <h3 class="project-headline">
+                  Voice-to-Voice AI Mock Interview Platform with LangGraph Backend
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: Simulates low-latency, two-way verbal interviews with dynamic difficulty scaling.
+                </p>
+                <div class="badge-container">
+                  <span class="accuracy-badge">SUB-SECOND LATENCY</span>
+                  <span class="rank-badge">GEMINI LIVE WS</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Engineered a <strong class="highlight-bold">low-latency duplex voice agent</strong> streaming raw
+                    PCM chunks via a secure Express WebSocket proxy.</li>
+                  <li>Orchestrated interview context using a <strong class="highlight-bold">LangGraph State
+                      Machine</strong> that manages evaluation, topic coverage, and follow-ups.</li>
+                  <li>Implemented real-time <strong class="highlight-bold">conversational interruption handling</strong>
+                    to halt model speech instantly upon candidate input.</li>
+                  <li>Generates comprehensive SaaS-style feedback reports with radar charts and quote-linked transcript
+                    evidence.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Deployed on:</span> Vercel (Frontend) & VPS/Render (Backend)
+                </div>
+                <div class="project-actions">
+                  <a href="https://intrvyu-ai.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    class="project-action-btn btn-accent">
+                    → Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Complaint Management System -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">complaint_system.json</span>
+                <span class="panel-time mono">Mar - Apr 2026</span>
+              </div>
+              <div class="panel-body">
+                <!-- Browser-window Media Block -->
+                <div class="project-media-frame">
+                  <div class="project-media-bar">
+                    <span class="panel-dot red"></span>
+                    <span class="panel-dot yellow"></span>
+                    <span class="panel-dot green"></span>
+                    <span class="project-media-title">https://kle-cms-437414717800.asia-southeast1.run.app/</span>
+                  </div>
+                  <div class="project-media-viewport">
+                    <img src="assets/screens/cms.webp" alt="Grievance Redressal Portal on Google Cloud Run" width="1280"
+                      height="720" loading="lazy" decoding="async" class="project-media-img"
+                      onerror="this.closest('.project-media-frame').remove();">
+                  </div>
+                </div>
+
+                <div class="project-tags mono">
+                  React · Node.js · Express · MongoDB · JWT · GCP
+                </div>
+                <h3 class="project-headline">
+                  A grievance portal that actually escalates
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: Solves structural delay in public services via automated task escalation.
+                </p>
+                <ul class="project-highlights">
+                  <li>Engineered a <strong class="highlight-bold">5-role Role-Based Access Control (RBAC)</strong>
+                    engine and secure JWT authentication flow.</li>
+                  <li>Built an <strong class="highlight-bold">automated escalation scheduler</strong> that automatically
+                    transfers unresolved issues to higher-tier officials after 5 business days.</li>
+                  <li>Integrated real-time websocket updates and SMTP dispatch for instant system-wide alerts.</li>
+                  <li>Designed admin analytics tools with high-fidelity PDF and Excel reports generation.</li>
+                  <li>Maintained high code quality with <strong class="accent-color">32 passing integration test
+                      cases</strong>.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Deployed on:</span> Google Cloud Run (HTTPS/CORS)
+                </div>
+                <div class="project-actions">
+                  <a href="https://kle-cms-437414717800.asia-southeast1.run.app/" target="_blank"
+                    rel="noopener noreferrer" class="project-action-btn btn-accent">
+                    → Live
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Spaceship Titanic -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">titanic_xgb.py</span>
+                <span class="panel-time mono">Feb - Mar 2026</span>
+              </div>
+              <div class="panel-body">
+                <div class="project-tags mono">
+                  Python · XGBoost · Scikit-learn · Pandas · NumPy
+                </div>
+                <h3 class="project-headline">
+                  Top 206 globally. 81.4% accuracy.
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: Optimized classification algorithms to predict anomaly outcomes.
+                </p>
+                <div class="badge-container">
+                  <span class="accuracy-badge">81.4% ACCURACY</span>
+                  <span class="rank-badge">RANK #206 GLOBAL</span>
+                </div>
+                <ul class="project-highlights">
+                  <li>Built a binary classification model on structured tabular dataset from Kaggle.</li>
+                  <li>Engineered spatial features based on cabin configurations (Deck, Num, Side) that boosted baseline
+                    accuracy by 2.4%.</li>
+                  <li>Resolved multi-variable missing values through dynamic null-pattern imputation based on companion
+                    groupings.</li>
+                  <li>Constructed an ensemble pipeline benchmarking XGBoost against Random Forest and Gradient Boost
+                    models.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Source:</span> Kaggle Machine Learning Competition
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: VANI NLP Classifier -->
+          <article class="project-card">
+            <div class="terminal-panel">
+              <div class="panel-header">
+                <span class="panel-dot red"></span>
+                <span class="panel-dot yellow"></span>
+                <span class="panel-dot green"></span>
+                <span class="panel-title mono">vani_classifier.pt</span>
+                <span class="panel-time mono">Dec 2025 - Jan 2026</span>
+              </div>
+              <div class="panel-body">
+                <div class="project-tags mono">
+                  Python · PyTorch · Hugging Face · mBERT · Pandas
+                </div>
+                <h3 class="project-headline">
+                  Teaching machines to read the way Indians actually text
+                </h3>
+                <p class="project-impact-line">
+                  // Core impact: Addresses the gap in NLP tooling for Indian languages.
+                </p>
+                <ul class="project-highlights">
+                  <li>Fine-tuned multilingual BERT (<strong class="highlight-bold">mBERT</strong>) specifically for
+                    code-mixed Hindi-English (Hinglish) syntax.</li>
+                  <li>Developed custom tokenizers and token-alignment pipelines to handle unstructured, phonetic, and
+                    toxic slang inputs.</li>
+                  <li>Achieved a significant classification improvement over standard pre-trained baselines.</li>
+                  <li>Implemented real-time sentence classification API endpoint.</li>
+                </ul>
+                <div class="project-footer">
+                  <span class="accent-color">→ Focus:</span> Code-mixed NLP & Text Categorization
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 // Skills -->
+    <section id="skills" class="skills-section scroll-reveal" data-reveal="slide">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-number mono">03 //</span>
+          <h2 class="section-title">Skills</h2>
         </div>
 
         <div class="skills-directory">
@@ -269,468 +638,7 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section scroll-reveal" data-reveal="slide">
-      <div class="section-container">
-        <div class="section-header">
-          <span class="section-number mono">03 //</span>
-          <h2 class="section-title">Selected Projects</h2>
-        </div>
-
-        <div class="projects-grid">
-
-          <!-- Project 1: NITK Build for Billions Winner - Rural Financial Advisory -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">rural_financial_advisor.py</span>
-                <span class="panel-time mono">Sep 2026 · NITK</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  Python · FastAPI · Qdrant Vector DB · FastEmbed · Gemini 2.5 Flash Lite · Groq Whisper · Telegram Bot
-                  API · WhatsApp Cloud API · Streamlit · Docker
-                </div>
-                <h3 class="project-headline">
-                  NABARD-Grounded Vernacular AI Advisory & DPR Structuring Platform
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: 2nd Place Winner at NITK Build for Billions. Generated bankable 2-page DPR PDFs with
-                  DSCR metrics in 5 Indian languages.
-                </p>
-                <div class="badge-container">
-                  <span class="award-badge mono">🏆 2ND PLACE WINNER @ NITK</span>
-                  <span class="accuracy-badge mono">184 TESTS PASSED (100%)</span>
-                  <span class="rank-badge mono">5 INDIAN LANGUAGES</span>
-                  <span class="rank-badge mono">ZERO-COST STACK</span>
-                </div>
-                <ul class="project-highlights">
-                  <li>Formulated a 100% zero-cost conversational AI advisory engine serving rural micro-entrepreneurs
-                    natively over <strong class="highlight-bold">Telegram & WhatsApp</strong> in 5 languages (Kannada,
-                    Hindi, Telugu, Marathi, English) with voice note STT/TTS.</li>
-                  <li>Engineered a <strong class="highlight-bold">deterministic financial calculation engine</strong>
-                    strictly grounded in official NABARD SLUCC unit costs and statutory schemes (<strong
-                      class="highlight-bold">PMEGP, MUDRA up to ₹20L, NSFDC, NBCFDC, NSTFDC</strong>) with strict
-                    anti-hallucination guardrails.</li>
-                  <li>Built a dual-engine automated PDF compiler producing vector-rendered <strong
-                      class="highlight-bold">2-page bankable Detailed Project Reports (DPR)</strong> with
-                    reducing-balance amortizations and 5-year cash-flow / DSCR projections dispatched instantly in chat.
-                  </li>
-                  <li>Developed an authenticated <strong class="highlight-bold">State Channelizing Agency (SCA) field
-                      officer console</strong> in Streamlit featuring GPS geo-verification, margin money validation, and
-                    automated loan sanctioning workflows.</li>
-                  <li>Maintained mission-critical reliability with an automated suite of <strong
-                      class="accent-color mono">184 unit and integration tests (100% pass rate)</strong>.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Built for:</span> Build for Billions Hackathon · National Institute of
-                  Technology (NITK)
-                </div>
-                <div class="project-actions">
-                  <a href="https://github.com/chinmay-workdesign/Rural-Entrepreneur-Financial-Advisory-BfB"
-                    target="_blank" rel="noopener noreferrer" class="project-action-btn">
-                    → GitHub Repository
-                  </a>
-                  <button type="button" class="project-action-btn btn-accent" data-open-cert="nitk">
-                    🏆 View NITK Certificate
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 2: First Commit Hackathon - Vitalis -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">vitalis_event_bus.ts</span>
-                <span class="panel-time mono">Sep 2026 · First Commit</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  AWS Lambda (22+ Microservices) · TypeScript · Next.js 14 · DynamoDB (Single-Table) · EventBridge ·
-                  Amazon Textract · Amazon Polly · Amazon Translate · Amazon Lex V2 · AWS CDK v2
-                </div>
-                <h3 class="project-headline">
-                  Serverless Telehealth & Clinical Automation Engine with Autonomous AI Voice Agents
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: Built at First Commit (WeMakeDevs & AWS). 100% pay-per-use, zero-idle-cost healthcare
-                  orchestration.
-                </p>
-                <div class="badge-container">
-                  <span class="award-badge mono">⚡ FIRST COMMIT HACKATHON</span>
-                  <span class="accuracy-badge mono">22+ AWS MICROSERVICES</span>
-                  <span class="rank-badge mono">SINGLE-TABLE DYNAMODB</span>
-                  <span class="rank-badge mono">ZERO IDLE COST</span>
-                </div>
-                <ul class="project-highlights">
-                  <li>Architected an enterprise-grade, serverless healthcare orchestration backend featuring <strong
-                      class="highlight-bold">22+ Node.js 20.x TypeScript microservices</strong> on AWS Lambda and an
-                    <strong class="highlight-bold">Amazon DynamoDB single-table design</strong>.
-                  </li>
-                  <li>Automated clinical document intake using <strong class="highlight-bold">Amazon Textract</strong>
-                    for multi-page OCR and extraction of complex medical laboratory panels into structured clinical
-                    biomarkers.</li>
-                  <li>Engineered <strong class="highlight-bold">Autonomous Conversational Voice Check-Ins</strong> using
-                    Amazon Lex V2 and Amazon Connect / Chime SDK to proactively call patients post-consultation, detect
-                    emergency symptoms, and atomically rebook clinic slots.</li>
-                  <li>Built <strong class="highlight-bold">Multilingual Prescription Accessibility</strong> by
-                    translating doctor instructions into regional languages (Amazon Translate) and streaming neural
-                    audio playback (Amazon Polly).</li>
-                  <li>Designed an interactive <strong class="highlight-bold">visual no-code clinical workflow
-                      canvas</strong> allowing doctors to construct dynamic event-driven care pathways triggered by
-                    Amazon EventBridge.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Built for:</span> First Commit (Bharat Builds Tour) · WeMakeDevs & Amazon
-                  Web Services (AWS)
-                </div>
-                <div class="project-actions">
-                  <a href="https://github.com/amoghsamji/Vitalis" target="_blank" rel="noopener noreferrer"
-                    class="project-action-btn">
-                    → GitHub Repository
-                  </a>
-                  <button type="button" class="project-action-btn btn-accent" data-open-cert="firstcommit">
-                    📜 View First Commit Certificate
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Intrvyu AI -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">graphEngine.ts</span>
-                <span class="panel-time mono">Jun - Jul 2026</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  Next.js 15 · Express · PostgreSQL · Prisma · LangGraph · Gemini Live API · WebSockets · TypeScript
-                </div>
-                <h3 class="project-headline">
-                  Voice-to-Voice AI Mock Interview Platform with LangGraph Backend
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: Simulates low-latency, two-way verbal interviews with dynamic difficulty scaling.
-                </p>
-                <div class="badge-container">
-                  <span class="accuracy-badge mono">SUB-SECOND LATENCY</span>
-                  <span class="rank-badge mono">GEMINI LIVE WS</span>
-                </div>
-                <ul class="project-highlights">
-                  <li>Engineered a <strong class="highlight-bold">low-latency duplex voice agent</strong> streaming raw
-                    PCM chunks via a secure Express WebSocket proxy.</li>
-                  <li>Orchestrated interview context using a <strong class="highlight-bold">LangGraph State
-                      Machine</strong> that manages evaluation, topic coverage, and follow-ups.</li>
-                  <li>Implemented real-time <strong class="highlight-bold">conversational interruption handling</strong>
-                    to halt model speech instantly upon candidate input.</li>
-                  <li>Generates comprehensive SaaS-style feedback reports with radar charts and quote-linked transcript
-                    evidence.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Deployed on:</span> Vercel (Frontend) & VPS/Render (Backend)
-                </div>
-                <div class="project-actions">
-                  <a href="https://intrvyu-ai.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="project-action-btn btn-accent">
-                    → Live Demo ↗
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Complaint Management System -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">complaint_system.json</span>
-                <span class="panel-time mono">Mar - Apr 2026</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  React · Node.js · Express · MongoDB · JWT · GCP
-                </div>
-                <h3 class="project-headline">
-                  A grievance portal that actually escalates
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: Solves structural delay in public services via automated task escalation.
-                </p>
-                <ul class="project-highlights">
-                  <li>Engineered a <strong class="highlight-bold">5-role Role-Based Access Control (RBAC)</strong>
-                    engine and secure JWT authentication flow.</li>
-                  <li>Built an <strong class="highlight-bold">automated escalation scheduler</strong> that automatically
-                    transfers unresolved issues to higher-tier officials after 5 business days.</li>
-                  <li>Integrated real-time websocket updates and SMTP dispatch for instant system-wide alerts.</li>
-                  <li>Designed admin analytics tools with high-fidelity PDF and Excel reports generation.</li>
-                  <li>Maintained high code quality with <strong class="accent-color mono">32 passing integration test
-                      cases</strong>.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Deployed on:</span> Google Cloud Run (HTTPS/CORS)
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5: Spaceship Titanic -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">titanic_xgb.py</span>
-                <span class="panel-time mono">Feb - Mar 2026</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  Python · XGBoost · Scikit-learn · Pandas · NumPy
-                </div>
-                <h3 class="project-headline">
-                  Top 206 globally. 81.4% accuracy.
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: Optimized classification algorithms to predict anomaly outcomes.
-                </p>
-                <div class="badge-container">
-                  <span class="accuracy-badge mono">81.4% ACCURACY</span>
-                  <span class="rank-badge mono">RANK #206 GLOBAL</span>
-                </div>
-                <ul class="project-highlights">
-                  <li>Built a binary classification model on structured tabular dataset from Kaggle.</li>
-                  <li>Engineered spatial features based on cabin configurations (Deck, Num, Side) that boosted baseline
-                    accuracy by 2.4%.</li>
-                  <li>Resolved multi-variable missing values through dynamic null-pattern imputation based on companion
-                    groupings.</li>
-                  <li>Constructed an ensemble pipeline benchmarking XGBoost against Random Forest and Gradient Boost
-                    models.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Source:</span> Kaggle Machine Learning Competition
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 6: VANI NLP Classifier -->
-          <article class="project-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">vani_classifier.pt</span>
-                <span class="panel-time mono">Dec 2025 - Jan 2026</span>
-              </div>
-              <div class="panel-body">
-                <div class="project-tags mono">
-                  Python · PyTorch · Hugging Face · mBERT · Pandas
-                </div>
-                <h3 class="project-headline">
-                  Teaching machines to read the way Indians actually text
-                </h3>
-                <p class="project-impact-line mono">
-                  // Core impact: Addresses the gap in NLP tooling for Indian languages.
-                </p>
-                <ul class="project-highlights">
-                  <li>Fine-tuned multilingual BERT (<strong class="highlight-bold">mBERT</strong>) specifically for
-                    code-mixed Hindi-English (Hinglish) syntax.</li>
-                  <li>Developed custom tokenizers and token-alignment pipelines to handle unstructured, phonetic, and
-                    toxic slang inputs.</li>
-                  <li>Achieved a significant classification improvement over standard pre-trained baselines.</li>
-                  <li>Implemented real-time sentence classification API endpoint.</li>
-                </ul>
-                <div class="project-footer mono">
-                  <span class="accent-color">→ Focus:</span> Code-mixed NLP & Text Categorization
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Hackathons & Certifications Section -->
-    <section id="certificates" class="certificates-section scroll-reveal" data-reveal="slide">
-      <div class="section-container">
-        <div class="section-header">
-          <span class="section-number mono">04 //</span>
-          <h2 class="section-title">Hackathons & Certifications</h2>
-        </div>
-
-        <div class="certificates-grid">
-
-          <!-- Certificate 1: NITK Build for Billions -->
-          <article class="certificate-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">nitk_bfb_award.png</span>
-                <span class="panel-time mono">Sep 2026</span>
-              </div>
-              <div class="cert-thumbnail-wrapper" data-open-cert="nitk" role="button" tabindex="0"
-                aria-label="View NITK Certificate">
-                <img src="nitk_certificate.png" alt="Build for Billions 2nd Place Certificate - NITK"
-                  class="cert-thumbnail" loading="lazy">
-                <div class="cert-zoom-overlay">
-                  <span>[+]</span> <span>CLICK TO INSPECT CERTIFICATE</span>
-                </div>
-              </div>
-              <div class="cert-body">
-                <div class="cert-badge-row">
-                  <span class="award-badge mono">🏆 2ND PLACE WINNER · HACKATHON WINNER</span>
-                </div>
-                <h3 class="cert-card-title">
-                  Build for Billions 24-Hour Hackathon
-                </h3>
-                <ul class="cert-details-list mono">
-                  <li><strong>Host:</strong> National Institute of Technology (NITK)</li>
-                  <li><strong>Organizers:</strong> Web Enthusiasts' Club NITK, IET NITK & INCUBATE</li>
-                  <li><strong>Award Date:</strong> 26th & 27th September, 2026</li>
-                  <li><strong>Project:</strong> Rural Micro-Enterprise AI Advisory & Financial Structuring Platform</li>
-                </ul>
-                <div class="cert-actions">
-                  <button type="button" class="project-action-btn btn-accent" data-open-cert="nitk">
-                    🔍 View High-Res Certificate
-                  </button>
-                  <a href="https://github.com/chinmay-workdesign/Rural-Entrepreneur-Financial-Advisory-BfB"
-                    target="_blank" rel="noopener noreferrer" class="project-action-btn">
-                    → GitHub Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Certificate 2: First Commit Hackathon (WeMakeDevs & AWS) -->
-          <article class="certificate-card">
-            <div class="terminal-panel">
-              <div class="panel-header">
-                <span class="panel-dot red"></span>
-                <span class="panel-dot yellow"></span>
-                <span class="panel-dot green"></span>
-                <span class="panel-title mono">first_commit_aws_certificate.png</span>
-                <span class="panel-time mono">Sep 2026</span>
-              </div>
-              <div class="cert-thumbnail-wrapper" data-open-cert="firstcommit" role="button" tabindex="0"
-                aria-label="View First Commit Certificate">
-                <img src="first_commit_certificate.png"
-                  alt="First Commit Certificate of Participation - WeMakeDevs & AWS" class="cert-thumbnail"
-                  loading="lazy">
-                <div class="cert-zoom-overlay">
-                  <span>[+]</span> <span>CLICK TO INSPECT CERTIFICATE</span>
-                </div>
-              </div>
-              <div class="cert-body">
-                <div class="cert-badge-row">
-                  <span class="award-badge mono">⚡ PROJECT SHIPPED · PARTICIPANT</span>
-                </div>
-                <h3 class="cert-card-title">
-                  Bharat Builds Tour · First Commit (Event 01)
-                </h3>
-                <ul class="cert-details-list mono">
-                  <li><strong>Host:</strong> WeMakeDevs with Amazon Web Services (AWS)</li>
-                  <li><strong>Signatory:</strong> Kunal Kushwaha (Founder, WeMakeDevs)</li>
-                  <li><strong>Award Date:</strong> 20th September, 2026</li>
-                  <li><strong>Project:</strong> Vitalis — Enterprise Serverless Healthcare Automation Platform</li>
-                </ul>
-                <div class="cert-actions">
-                  <button type="button" class="project-action-btn btn-accent" data-open-cert="firstcommit">
-                    🔍 View High-Res Certificate
-                  </button>
-                  <a href="first_commit_certificate.pdf" target="_blank" rel="noopener noreferrer"
-                    class="project-action-btn">
-                    ↗ Open PDF
-                  </a>
-                  <a href="https://github.com/amoghsamji/Vitalis" target="_blank" rel="noopener noreferrer"
-                    class="project-action-btn">
-                    → GitHub Repository
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education-section scroll-reveal" data-reveal="slide">
-      <div class="section-container">
-        <div class="section-header">
-          <span class="section-number mono">05 //</span>
-          <h2 class="section-title">Education</h2>
-        </div>
-
-        <div class="timeline-container">
-          <div class="timeline-line"></div>
-
-          <!-- Education Item 1 -->
-          <div class="timeline-item">
-            <div class="timeline-marker mono">[2024 - 2028]</div>
-            <div class="timeline-content">
-              <h3 class="edu-institution">KLE Technological University</h3>
-              <div class="edu-degree mono">B.E. in Computer Science & Engineering</div>
-              <div class="edu-stats mono">CGPA: <span class="accent-color">9.1 / 10.0</span> (Ongoing)</div>
-              <p class="edu-details">
-                Focus on Core Software Engineering, Data Structures, Algorithms, Database Systems, and Machine Learning.
-                Active involvement in building projects outside the curriculum.
-              </p>
-            </div>
-          </div>
-
-          <!-- Education Item 2 -->
-          <div class="timeline-item">
-            <div class="timeline-marker mono">[2024]</div>
-            <div class="timeline-content">
-              <h3 class="edu-institution">Central Public School</h3>
-              <div class="edu-degree mono">Senior Secondary School (CBSE)</div>
-              <div class="edu-stats mono">Score: <span class="accent-color">87%</span></div>
-              <p class="edu-details">
-                Rigorous focus on Physics, Chemistry, and Mathematics (PCM).
-              </p>
-            </div>
-          </div>
-
-          <!-- Education Item 3 -->
-          <div class="timeline-item">
-            <div class="timeline-marker mono">[2022]</div>
-            <div class="timeline-content">
-              <h3 class="edu-institution">Jawahar Navodaya Vidyalaya</h3>
-              <div class="edu-degree mono">Secondary School (CBSE)</div>
-              <div class="edu-stats mono">Score: <span class="accent-color">94%</span></div>
-              <p class="edu-details">
-                Scholastic foundation, developing deep interest in logical computing models.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- 04 // Contact -->
     <section id="contact" class="contact-section scroll-reveal" data-reveal="fade">
       <div class="section-container text-center">
         <h2 class="contact-title">Let's build something.</h2>
@@ -753,7 +661,7 @@
               <rect x="2" y="9" width="4" height="12"></rect>
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
-            <span class="social-label mono">linkedin</span>
+            <span class="social-label">linkedin</span>
           </a>
 
           <!-- GitHub SVG -->
@@ -765,12 +673,12 @@
                 d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
               </path>
             </svg>
-            <span class="social-label mono">github</span>
+            <span class="social-label">github</span>
           </a>
         </div>
 
-        <footer class="contact-footer mono">
-          <p>Designed & built by Chinmay · 2026</p>
+        <footer class="contact-footer">
+          <p>Designed &amp; built by Chinmay · 2026</p>
         </footer>
       </div>
     </section>
@@ -812,7 +720,7 @@
     </div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=1.0.8"></script>
 </body>
 
 </html>
